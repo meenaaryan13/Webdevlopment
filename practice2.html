@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navigation bar</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript">
+       function togglemenu(){
+           document.getElementById('sidebar').classList.toggle('active');
+       }  
+       </Script>
+    <style> 
+    *{ 
+    margin: 00;
+    padding: 00;   
+}
+ #sidebar{
+     position: fixed;
+     width: 30%;
+     height: 100%;
+     left: -30%;
+     background-color: black;
+ }
+ ul li:hover{
+         background-color:tomato;
+     }
+     div span{
+        background-color:tomato;
+     }
+ 
+ 
+ #sidebar li{
+    font-family: cursive;
+     color:white;
+     font-size: 30px;
+     padding: 30px;
+     border-bottom: 1px solid gray;
+     text-align: center;
+ }
+ .toggle-btn{
+            position: absolute;
+            left: 105%;
+            top: -10px;
+            
+ }
+ .toggle-btn span{
+      display: block;
+      background-color: black;
+      width: 30px;
+      height:5px;
+      margin: 3px;
+      
+
+ }
+ #sidebar.active{
+     left: 0;
+ }
+
+    h2 {
+        color:white;
+        margin: 20px;
+        padding: 16px;
+        
+    
+    
+    }
+    
+  body {
+  background-image: url('https://blog.fiverr.com/wp-content/uploads/freelance-web-developer-at-work-696x464.jpg');
+  background-repeat: no-repeat;
+  background-attachment:fixed;
+  background-size:cover;
+}
+
+     ul {
+          list-style-type:none;
+          margin: 20px;
+          margin-left: 60px;
+          padding-left: 40px;
+          overflow:hidden;
+          background-color:turquoise;
+          border-radius: 20px;
+     }
+     
+    li a {
+        float: left;
+    }
+     li a{
+          display:block;
+          color:black;
+          text-align:center;
+          padding: 20px;
+          margin:00;
+          text-decoration: none;
+     }
+     li a:hover{
+         background-color:tomato;
+     }
+
+     
+    </style>
+</head>
+<body>
+    <strong>
+ <h2>  Navigation menu</h2>
+ </strong>
+    <ul id="my">
+        <li><a href="#html">Html</a></li>
+        <li><a href="#css">Css</a></li>
+        <li><a href="#JAVASCRIPT">Java script</a></li>
+        <li><a href="#Sql">Sql</a></li>
+    </ul>
+    <div id="sidebar" onclick="togglemenu()">
+        <div class="toggle-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+           
+        </div>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Gallery</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    
+</body>
+</html>
